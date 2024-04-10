@@ -1,0 +1,187 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weatherapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:6:22-76
+14
+15    <permission
+15-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.weatherapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.example.weatherapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:7:5-29:19
+22        android:name="com.example.weatherapplication.WeatherApp"
+22-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:8:9-35
+23        android:allowBackup="true"
+23-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:9:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.12.0] C:\Users\zonce\.gradle\caches\transforms-3\d72c1168976096074fb756d796b6e3aa\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:10:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:11:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:12:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:13:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:14:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:15:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.WeatherApplication" >
+34-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:16:9-56
+35        <activity
+35-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:18:9-28:20
+36            android:name="com.example.weatherapplication.presentation.MainActivity"
+36-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:19:13-54
+37            android:exported="true"
+37-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:20:13-36
+38            android:label="@string/app_name"
+38-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:21:13-45
+39            android:theme="@style/Theme.WeatherApplication" >
+39-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:22:13-60
+40            <intent-filter>
+40-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:23:13-27:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:24:17-69
+41-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:24:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:26:17-77
+43-->C:\Users\zonce\WeatherApplication\app\src\main\AndroidManifest.xml:26:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\bc178971324f25b6e09b8ba589e950c7\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+47            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+47-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\bc178971324f25b6e09b8ba589e950c7\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+48            android:exported="false"
+48-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\bc178971324f25b6e09b8ba589e950c7\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\bc178971324f25b6e09b8ba589e950c7\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+50
+51        <meta-data
+51-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\ddcef30364b33866673a04d19722995f\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+52            android:name="com.google.android.gms.version"
+52-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\ddcef30364b33866673a04d19722995f\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+53            android:value="@integer/google_play_services_version" />
+53-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\zonce\.gradle\caches\transforms-3\ddcef30364b33866673a04d19722995f\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+54
+55        <activity
+55-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\718960939d48c02c8cea8827c6ed93a6\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:23:9-25:39
+56            android:name="androidx.activity.ComponentActivity"
+56-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\718960939d48c02c8cea8827c6ed93a6\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:24:13-63
+57            android:exported="true" />
+57-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\718960939d48c02c8cea8827c6ed93a6\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:25:13-36
+58        <activity
+58-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\c404497bb5c78220fd50c45e09bf3d61\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+59            android:name="androidx.compose.ui.tooling.PreviewActivity"
+59-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\c404497bb5c78220fd50c45e09bf3d61\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+60            android:exported="true" />
+60-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\zonce\.gradle\caches\transforms-3\c404497bb5c78220fd50c45e09bf3d61\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+61
+62        <provider
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.startup.InitializationProvider"
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+64            android:authorities="com.example.weatherapplication.androidx-startup"
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+65            android:exported="false" >
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\6e8d58e6fcc78af2c22afb4e177962e1\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\zonce\.gradle\caches\transforms-3\5f613d3da57bd7a11a2d680ecc8184d2\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\zonce\.gradle\caches\transforms-3\5f613d3da57bd7a11a2d680ecc8184d2\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\zonce\.gradle\caches\transforms-3\5f613d3da57bd7a11a2d680ecc8184d2\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+74                android:value="androidx.startup" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+75        </provider>
+76
+77        <uses-library
+77-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+78            android:name="androidx.window.extensions"
+78-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+80        <uses-library
+80-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+81            android:name="androidx.window.sidecar"
+81-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0] C:\Users\zonce\.gradle\caches\transforms-3\7915d44c58e62dec02b4071d2bdb48b1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zonce\.gradle\caches\transforms-3\c9e20fd7be37f67b410e22a27cda6a40\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+101            </intent-filter>
+102        </receiver>
+103    </application>
+104
+105</manifest>
