@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.activity.ComponentActivity;
+import androidx.activity.compose.LocalOnBackPressedDispatcherOwner;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.RequiresApi;
@@ -16,7 +17,6 @@ import androidx.compose.ui.Modifier;
 import com.example.weatherapplication.presentation.current.CurrentWeatherViewModel;
 import com.example.weatherapplication.presentation.forecast.ForecastWeatherViewModel;
 import com.example.weatherapplication.presentation.location.LocationWeatherViewModel;
-import com.example.weatherapplication.R;
 import dagger.hilt.android.AndroidEntryPoint;
 
 @dagger.hilt.android.AndroidEntryPoint

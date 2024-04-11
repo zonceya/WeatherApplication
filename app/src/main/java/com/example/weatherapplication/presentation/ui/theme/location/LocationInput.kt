@@ -1,9 +1,15 @@
 package com.example.weatherapplication.presentation.ui.theme.location
 
+import androidx.activity.OnBackPressedCallback
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -16,7 +22,9 @@ import androidx.compose.ui.unit.dp
 fun LocationInput(
     onLocationChanged: (String) -> Unit,
     onSearchClicked: () -> Unit,
-    onAddFavorite: (String) -> Unit // Add this parameter
+    onAddFavorite: (String) -> Unit,
+    onBackClicked: () -> Unit,
+
 ) {
     var location by remember { mutableStateOf(TextFieldValue()) }
 
@@ -36,10 +44,14 @@ fun LocationInput(
             keyboardActions = KeyboardActions(onDone = {
                 onLocationChanged(location.text)
                 onSearchClicked()
-            })
+            }),
+            leadingIcon = {
+                IconButton(onClick = { onBackClicked() }) {
+                    Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                }
+            },
         )
         Spacer(modifier = Modifier.height(16.dp))
-
         Button(
             onClick = {
                 onAddFavorite(location.text) // Invoke the onAddFavorite callback
@@ -49,6 +61,7 @@ fun LocationInput(
         ) {
             Text("Add to Favorites")
         }
+
        // FavoritesList(favoriteLocations = favoriteLocations, onRemoveFavorite = onRemoveFavorite)
     }
 }

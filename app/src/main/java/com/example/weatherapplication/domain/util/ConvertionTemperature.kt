@@ -7,7 +7,7 @@ fun kelvinToCelsius(kelvin: Double): Double {
 }
 
 // Function to format temperature for display
-fun DisplayTemperature(temp: Double): String {
+fun displayTemperature(temp: Double): String {
     val celsiusTemp = kelvinToCelsius(temp)
     return "${celsiusTemp.roundToInt()}"
 }

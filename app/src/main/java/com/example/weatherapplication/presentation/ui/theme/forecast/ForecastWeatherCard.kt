@@ -2,7 +2,6 @@ package com.example.weatherapplication.presentation.ui.theme.forecast
 
 import android.os.Build
 import androidx.annotation.RequiresApi
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,8 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weatherapplication.presentation.forecast.ForecastWeatherSate
-import com.example.weatherapplication.presentation.getBackgroundColor
-import com.example.weatherapplication.presentation.ui.theme.forecast.ForecastWeatherDisplay
+import com.example.weatherapplication.presentation.ui.theme.components.getBackgroundColor
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -39,8 +37,7 @@ fun ForecastWeatherCard(
             if (firstDayForecastData != null) {
                 backgroundColors = firstDayForecastData.firstOrNull()
                     ?.let { getBackgroundColor(it.description) }
-                // Now you have the background image for the weather description of the first day
-                // You can use this backgroundImage in your UI
+
             }
         }
 

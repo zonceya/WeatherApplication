@@ -1,5 +1,7 @@
 package com.example.weatherapplication.presentation.location
 
+import android.content.Context
+import android.widget.Toast
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -12,6 +14,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+
 @HiltViewModel
 class LocationWeatherViewModel @Inject constructor(
     private val repository: WeatherRepository,
@@ -22,19 +25,28 @@ class LocationWeatherViewModel @Inject constructor(
         private set
     val favoriteLocations = mutableStateOf(sharedPreferencesManager.getFavoriteLocations())
 
-    fun addFavoriteLocation(location: String) {
+    fun addFavoriteLocation(location: String, context: Context) {
         val currentFavorites = favoriteLocations.value.toMutableSet()
-        currentFavorites.add(location)
-        sharedPreferencesManager.saveFavoriteLocations(currentFavorites)
-        // Update the mutable state after adding a location
-        favoriteLocations.value = currentFavorites.toSet()
-        getLocationCurrentWeather(location)
+        val trimmedLocation = location.trim() // Trim leading and trailing spaces
+        if (!currentFavorites.contains(trimmedLocation)) {
+            currentFavorites.add(trimmedLocation)
+            sharedPreferencesManager.saveFavoriteLocations(currentFavorites)
+            // Update the mutable state after adding a location
+            favoriteLocations.value = currentFavorites.toSet()
+            getLocationCurrentWeather(trimmedLocation)
+        } else {
+            // Location already exists in favorites, show a toast message
+            Toast.makeText(context, "Location '$trimmedLocation' already exists in favorites", Toast.LENGTH_SHORT).show()
+        }
     }
 
+
     fun removeFavoriteLocation(location: String) {
-        val currentFavorites = sharedPreferencesManager.getFavoriteLocations().toMutableSet()
+        val currentFavorites = favoriteLocations.value.toMutableSet()
         currentFavorites.remove(location)
         sharedPreferencesManager.saveFavoriteLocations(currentFavorites)
+        // Update the mutable state after removing a location
+        favoriteLocations.value = currentFavorites.toSet()
     }
 
     fun getFavoriteLocations(): Set<String> {

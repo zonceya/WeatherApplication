@@ -4,7 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import com.example.weatherapplication.presentation.location.LocationWeatherViewModel
-import com.example.weatherapplication.presentation.ui.theme.forecast.FavoritesList
 
 @Composable
 fun FavoriteLocationCard(viewModel: LocationWeatherViewModel) {

@@ -12,10 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import com.example.weatherapplication.domain.util.DisplayTemperature
+import com.example.weatherapplication.domain.util.displayTemperature
+import com.example.weatherapplication.domain.util.kelvinToCelsius
 import com.example.weatherapplication.presentation.WeatherDataDisplay
 import com.example.weatherapplication.presentation.current.CurrentWeatherState
-import com.example.weatherapplication.presentation.getBackgroundColor
+import com.example.weatherapplication.presentation.ui.theme.components.getBackgroundColor
 @Composable
 fun WeatherDataRow(state: CurrentWeatherState) {
     val backgroundColor =
@@ -46,7 +47,7 @@ fun WeatherDataRow(state: CurrentWeatherState) {
                 )
             }
             state.currentWeatherInfo?.currentWeatherData?.temp?.let {
-                val toCelsius = DisplayTemperature(it)
+                val toCelsius = displayTemperature(it)
                 WeatherDataDisplay(
                     value = toCelsius.toInt(),
                     metrics=  "°",
@@ -56,9 +57,8 @@ fun WeatherDataRow(state: CurrentWeatherState) {
                 )
             }
             state.currentWeatherInfo?.currentWeatherData?.tempMax?.let {
-                val toCelsius = DisplayTemperature(it)
                 WeatherDataDisplay(
-                    value = toCelsius.toInt() ,
+                    value = it.toInt()  ,
                     metrics=  "°",
                     unit = "max",
                     iconTint = Color.White,
